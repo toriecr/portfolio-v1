@@ -1,0 +1,141 @@
+@import 'layout/intro.scss';
+@import 'layout/resume.scss';
+@import 'layout/projects.scss';
+@import 'layout/contact.scss';
+
+ 
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    text-align: center;
+    background-color: rgb(211, 192, 195) !important;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+} 
+
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] { 
+    display: flex;
+    flex-direction: column;
+} 
+
+.col {
+    min-height: 350px !important;
+    max-height: 350px;
+    padding: 0 !important;
+}
+
+.titles {
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 5px;
+    color: #485656;
+    text-decoration: underline;
+    font-size: xx-large;
+}
+
+.nav-item {
+    font-family: 'Sawarabi Gothic', sans-serif; 
+    font-weight: 600;
+}
+
+a:active {
+    opacity: 0.1;
+}
+
+@media (max-width: 320px) {
+    .resume {
+        padding-right: 180px;
+    }
+
+    .projects {
+        padding-right: 180px; 
+    }
+
+    .contact {
+        padding-right: 180px;
+    }
+}
+
+
+@media (min-width:321px) and (max-width:414px) {
+    
+    .resume {
+        padding-right: 90px;
+    }
+
+    .projects {
+        padding-right: 90px;
+    }
+
+    .contact {
+        padding-right: 90px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    .resume {
+        padding-right: 90px;
+    }
+
+    .projects {
+        padding-right: 90px;
+    }
+
+    .contact {
+        padding-right: 90px;
+    }
+}
+
+@media (min-width:768px) { 
+
+    //off-center; need padding for devices 768- anything less than 1024
+
+    .container {
+        max-width: 100% !important;
+    }
+
+} 
+
+@media (min-width:1024px) {
+    .height_fix {
+        max-height: 280px !important;
+    }
+}
+
+@media (min-height:768px){
+    .col {
+        min-height: 375px !important;
+    }
+    
+}
+
+@media (min-height:1024px) {
+    .col {
+        min-height: 500px !important;
+    }
+}
+
+@media (min-height:1336px) {
+    .col {
+        min-height: 600px !important;
+    }
+}
+
+// @media (min-width:1024px) { 
+//     .col {
+
+//     }
+// }

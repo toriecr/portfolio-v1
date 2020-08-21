@@ -1,0 +1,76 @@
+.intro {
+    width: 100%;
+    text-align: center;
+    background-color: #FFFFDB;
+    // background-color: #E8E288;
+    min-height: 100%;
+    padding-top: 70px;
+
+    &__nametag {
+        width: 20%;
+        min-width: 300px;
+        max-width: 350px;
+        display: inline-block;
+        box-shadow: 0 1em 2em rgba(0, 0, 0, .2);
+        border-radius: 10px;
+
+        &-top {
+            background-color: rgb(255, 51, 51);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            &__h1 {
+                margin: 0;
+            }
+        }
+
+        &-middle {
+            background-color: white;
+        }
+
+        &-end {
+            background-color: rgb(255, 51, 51);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 10px;
+        }
+
+    }
+
+}
+
+.intro:hover {
+    background-color: white;
+    opacity: 0.8;
+}
+
+.hello {
+    display: block;
+    font-family: 'Lilita One', cursive;
+    color: white;
+    line-height: 1;
+    font-size: xxx-large;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+.myname {
+    display: block;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    color: white;
+    line-height: 1;
+    padding-bottom: 7px;
+}
+
+.torie {
+    margin-block-start: 0;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 3px;
+    padding-top: 10px;
+}
+
+.occupation {
+    margin-block-end: 0;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: larger;
+    font-weight: bold;
+}
